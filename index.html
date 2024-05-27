@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/5135d630a7.js" crossorigin="anonymous"></script>
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Arun Kumar</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="portfolio-navbar-container" class="container-fluid" >
+        <header id="portfolio-navbar" class="d-flex flex-wrap py-3">
+
+            <ul id="portfolio-navbar-pills" class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#portfolio-about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio-experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#portfolio-education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#portfolio-projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#portfolio-skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio-highlights" class="nav-link">Certifications</a></li>
+            </ul>
+
+            <ul id="portfolio-sidebar-toggle" class="nav nav-pills">
+                <button type="button" onclick="openSidebar()"
+                    class="portfolio-sidebar-toggle-button btn btn-outline-primary"><i class="fas fa-bars"></i></button>
+            </ul>
+
+
+        </header>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="portfolio-sidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+
+        <div style="display: flex; margin-left:auto;"><button type="button" onclick="closeSidebar()" class="btn-close btn-close-white"
+                aria-label="Close"></button></div>
+
+        <hr>
+        <ul style="flex-direction: column;" id="portfolio-sidebar-pills" class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#portfolio-about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#portfolio-experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#portfolio-education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#portfolio-projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#portfolio-skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#portfolio-highlights" class="nav-link">Certifications</a></li>
+        </ul>
+
+    </div>
+
+
+    <!-- About -->
+    <div id="portfolio-about">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">About Me</h2>
+        <div class="container">
+            <div>
+                <div>
+                    <img style="height:auto;" alt="" width="180" height="180" id="portfolio-avatar"
+                        class="avatar avatar-user width-full border color-bg-primary"
+                        src="https://avatars.githubusercontent.com/u/84587079?v=4">
+                </div>
+                <div>
+                    <br>
+                    <h4>Hello Everyone! &#128075;</h4>
+
+                    <p>
+                        I am <b>Arun Kumar.</b><br>
+                        I love to learn about new things and explore how things actually work behind the softwares & applications.<br>
+                        I aim to become a good software engineer<br>
+                        Keep scrolling, we might end up having a mutual interest :)
+                    </p>
+                    <div id="portfolio-hero-links">
+                        <a class="portfolio-hero-social-link" title="Github" target="_blank" href="https://github.com/arunkumar02042002"
+                            target="_blank"><i class="portfolio-hero-highlight fab fa-github"
+                                aria-hidden="true"></i></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="Leetcode" target="_blank" href="https://leetcode.com/arun_kumar02"
+                            target="_blank">
+                            <img width="38" height="40" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo"/>
+                        </a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="GeeksForGeeks" target="_blank"
+                            href="https://auth.geeksforgeeks.org/user/arunkumar2403gg" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/GeeksforGeeks.png" alt="GeeksforGeeks"/></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="HackerRank" target="_blank" href="https://www.hackerrank.com/profile/arunbhai7msd" aria-hidden="true"><i class="portfolio-hero-highlight fab fa-brands fa-hackerrank"></i></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="LinkedIn" href="https://www.linkedin.com/in/arunkumar2403/" target="_blank"><i class="portfolio-hero-highlight fab fa-linkedin" aria-hidden="true"></i></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="Instagram" target="_blank"
+                            href="https://www.instagram.com/bhaiarunbihari/" target="_blank"><i
+                            class="portfolio-hero-highlight fab fa-instagram" aria-hidden="true"></i></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="Mail" target="_blank"
+                            href="mailto:arun.kumar.2403gg@gmail.com" target="_blank"><i
+                                class="portfolio-hero-highlight fas fa-envelope" aria-hidden="true"></i></a>&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- Experience -->
+    <div id="portfolio-experience">
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Work Experience</h2>
+
+        <div class="portfolio-timeline">
+            <div class="portfolio-experience-card right">
+                <div class="portfolio-experience-card-content" data-date="March 2024 – April 2024">
+                    <img class="company-img" src="assets/images/virsa-india-logo.png" width="100px" style="background-color: black;" />
+                    <h3 class="mt-3"><a target="_blank" href="https://virsaindia.com/">VirsaIndia.com</a></h3>
+                    <h4 >Backend Developer Intern <br><small style="font-size: 14px;">Mar-2024 - April-24</small></h4>
+                    <p>
+                        <b>1. Developed a subscription based Biometric Analysis System for Virsa India.</b><br>
+                        <b>2. Worked with dynamic tech stack including Django, Django Rest Framework, PostgreSQL, AWS, Git, GitHub, pdfkit, etc.</b><br>
+                        <b>3. Worked on other features inlcuing generating certifications, User Delete Functionality, Otp Login Method, etc.</b><br>
+                        <b>4. Used Rest Framework testing environment for code testing to cover every edge case possible.</b><br>
+                        <b>5. Technologies Used: Django, Django RestFramework, Pdfkit, PostgreSQL, AWS, etc.</b><br>
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-experience-card left">
+                <div class="portfolio-experience-card-content" data-date="May 2019 – August 2019">
+                    <img class="company-img" src="assets/images/mapsofindia-logo.png" width="100px" />
+                    <h3 class="mt-3"><a target="_blank" href="https://www.mappingdigiworld.com/">Mapping Digiworld</a></h3>
+                    <h4>Backend Developer Intern <br><small style="font-size: 14px;">Jan-2024 - Feb-24</small></h4>
+                    <p>
+                        <b>1. Developed two Back-End Systems for custom mapping applications using Django Framework.</b><br>
+                        <b>2. Designed database schema and managed a large amount of sales data migrations in MySQL database.</b><br>
+                        <b>3. Worked on other features including Sales Data cleaning and Analysis, plotting data points on maps, etc.</b><br>
+                        <b>4. Worked with the front-end teams to develop the mapping interface using LeafletJS.</b><br>
+                        <b>5. Technologies Used: Django, MySQL, Pandas, HTML, CSS, Javascript, LeafletJS, etc.</b><br>
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-experience-card right">
+                <div class="portfolio-experience-card-content" data-date="May 2019 – August 2019">
+                    <img class="company-img" src="assets/images/seo-webfix-logo.png" width="100px" />
+                    <h3 class="mt-3"><a target="_blank" href="https://seowebfix.com/">SeoWebfix</a></h3>
+                    <h4>Python Developer Intern <br><small style="font-size: 14px;">Oct-2023 - Dec-24</small></h4>
+                    <p>
+                        <b>1. Completed Several web scraping projects to extract information from several e-commerce websites.</b><br>
+                        <b>2. Used MySQL and Excel to store and perform cleaning of the data.</b><br>
+                        <b>3. Worked on designing and developing the dynamic html and added css and Bootstrap classes for styling.</b><br>
+                        <b>4. Technologies Used: Python, MySQL, Pandas, Excel, HTML, CSS, Bootstrap, etc.</b><br>
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-experience-card left">
+                <div class="portfolio-experience-card-content" data-date="March 2020 – December 2020">
+                    <img class="company-img" src="assets/images/jtp-logo.png" width="100px" />
+                    <h3><a target="_blank" href="https://www.javatpoint.com/">JavaTpoint</a></h3>
+                    <h4>Technical Content Writer and Reviewer <br><small style="font-size: 14px;">Jan-2022 - Sep 2023</small></h4>
+                    <p>                     
+                        <b>1. Worked as an Intern from jan 2022 to July 2022.</b><br>
+                        <b>2. Created technical content to explain complex technologies in useful ways to the target audience.</b><br>
+                        <b>3. Utilize my strong technical knowledge to ensure the accuracy and quality of all technical content published on the platform.</b><br>
+                        <b>4. Lead a team of 8 interns, guided them to write creative contents and provided feedback for continuous improvements and ensured high quality content standards met.</b><br>
+                        <b>5. Promoted to as the Technical Content Reviewer</b><br>
+                        <b>6. Technologies Used: Python, C, C++, DSA, Pandas</b><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h2 class="portfolio-heading">Organizations</h2>
+        <div class="portfolio-organizations container">
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/qasida-logo.jpg" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><a target="_blank" href="https://www.instagram.com/qasida_slc/">Qasida</a> -
+                                The Poetry Society of SLC</h4>
+                            <h5 class="card-subtitle my-2"><strong>Core Team Member And Graphics Designer</strong></h5>
+                            <h5 class="card-subtitle">2020-2022</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>I have played a crucial role in ideation, planning, and execution of campaigns and designs.</li>
+                                <li>Successfully hosted several online and offline events in a team settings.</li>
+                                <li>Designed graphics for Social Media Handles and posters for events.</li>
+                                <li>Guided juniors to write and craft their creative ideas.</li>
+                            </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/nss-logo.jpeg" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><a target="_blank" href="https://www.instagram.com/nss_slc/">NSS</a> -
+                                National Service Scheme of SLC</h4>
+                            <h5 class="card-subtitle my-2"><strong>Volunteer</strong></h5>
+                            <h5 class="card-subtitle">2019 - 2022</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Worked with a passionate team and make a positive impact in the community</li>
+                                <li>Assisted in event planning and collaborated with volunteers for outreach programs.</li>
+                                <li>Helped with administrative tasks and Developed teamwork, communication, and organization skills.</li>
+                            </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/renukiran-logo.webp" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><a target="_blank" href="https://www.renukiran.org/">RenuKiran Welfare Foundation</a></h4>
+                            <h5 class="card-subtitle my-2"><strong>Educator</strong></h5>
+                            <h5 class="card-subtitle">2021 - 2022</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Through my strong communication skills and passion for teaching, I was able to create engaging lessons and foster a supportive learning environment.</li>
+                                <li>Developed curriculum to meet student needs and utilized various teaching methods for effective learning.</li>
+                                <li>Conducted assessments and provided feedback for growth and hosted several events to bring out the creativity of students.</li>
+                            </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- Education -->
+    <div id="portfolio-education">
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Education 👨‍🎓</h2>
+        <div class="container">
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="assets/images/slc-logo.jpg" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">Shyam Lal College - Delhi University</h4>
+                            <h5 class="card-subtitle my-3"><strong>B. Sc.(Computer Science)</strong></h5>
+                            <h5 class="card-subtitle">2019 - 2022</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Score - 8.40 CGPA</li>
+                                <li>Activities - Core Team Member Qasida and NSS Volunteer</li>
+                            </ul>
+                            </p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="assets/images/sbv-logo.png" class="portfolio-education-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">Sarvodaya Bal Vidyalaya</h4>
+
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    <b>Class XII (2018-2019, C.B.S.E) Board Exams: </b> 85%
+                                </li>
+                                <li>
+                                    <b>Class X (2016-2017, C.B.S.E) Board Exams: </b> 8.3 CGPA
+                                </li>
+                            </ul>
+                            </p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- Projects -->
+
+    <div id="portfolio-projects">
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Projects 👨‍💻</h2>
+        <div class="container">
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/ai-app-cover.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>AI App</strong></h4>
+                            <h6 class="card-subtitle my-2"> AI Blog Generator and Audio Analyzer</h6>
+                            
+                            <p class="card-test">Generates articles by following a series of steps:</p>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-check"></i> Utilized <strong>PyTube</strong> to extract Audio from the Youtube video.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Assembly AI - To extract transcript from audio.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Open Ai - To generate a comprehensive article from the transcript.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Utilized Assembly Ai - To perform sentiment analysis of an audio.</li>
+                                <li><i class="fa-solid fa-square-check"></i> <strong>Technologies:</strong> Django, PyTube, Assembly Ai, Open Ai, MySQL, etc. </li>
+                               
+                            </ul>
+                            </p>
+                            <p style="text-align: right;"><a target="_blank" class="btn btn-outline-danger" style="color:black !important"
+                                    href="https://github.com/arunkumar02042002/ai_blog_generator"><i
+                                        style="color:black !important" class="fab fa-github"></i> View on Github</a></p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/movie-app-cover.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Movie App</strong></h4>
+                            <h6 class="card-subtitle my-2">A subscription based movie application.</h6>
+                            
+                            <h4>Features:</h4>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-check"></i> Subscribed users can watch premium videos.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Unsubscribed users can only watch free videos.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Users can add movies to their wishlist, like them and drop comments.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Added pagination on the movie list page along with filteration based on different fields.<li>
+                                <li><i class="fa-solid fa-square-check"></i> Search Feature - Allowing user to search their favourite movies.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Integrated Razorpay as the payement gateway for transactions.</li>
+                                <li><i class="fa-solid fa-square-check"></i> <Strong>Technologies:</Strong>  Django, MySQL, Javascript, Razorpay, HTML, CSS, Bootstrap, etc.</li>
+                            </ul>
+                            </p>
+
+                            <p style="text-align: right;"><a target="_blank" class="btn btn-outline-danger" style="color:black !important"
+                                href="https://github.com/arunkumar02042002/netflix"><i
+                                    style="color:black !important" class="fab fa-github"></i> View on Github</a></p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/E-Commerce.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>E-commerce Backend API</b></h4>
+                            <h6 class="card-subtitle my-2">A complete back-end api for an e-commerce platform.</h6>
+
+                            <h4>Features:</h4>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-check"></i> Implemented a JWT token based authentication backend.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Created cart functionality for users to easily add, remove and purchase items.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Added product read-only endpoints for users and CRUD endpoints for admins.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Integrated <b>Django-filters</b> on the porduct listing page allowing users to filter products as per their needs.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Integrated <b>Celery Workers</b> to perform background tasks with <b>Redis and RabbitMQ</b></li>
+                                <li><i class="fa-solid fa-square-check"></i> Used <b>PyTest</b> to perform testing to ensure accruate behavior of each functionality
+                                </li>
+                                <li><i class="fa-solid fa-square-check"></i> <Strong>Technologies:</Strong>  Django, Django RestFramework, PostgreSQL, Celery, Redis, RabbitMQ, SimpleJWT, Django-filters, etc.</li>
+                            </ul>
+                            </p>
+                            <p style="text-align: right;"><a target="_blank" class="btn btn-outline-danger" style="color:black !important"
+                                    href="https://github.com/arunkumar02042002/shopcartush"><i
+                                        style="color:black !important" class="fab fa-github"></i> View on Github</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/social-app.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">Social Media App</h4>
+                            <h6 class="card-subtitle my-2">A simple social media platform for users.</h6>
+                            
+                            <h4>Features:</h4>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-check"></i> Implemented a Session based authentication backend.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Users can Post pictures, like them, drop comments, follow other users.</li>
+                                <li><i class="fa-solid fa-square-check"></i> <strong>Technologies:</strong> Django, MySQL, HTML, CSS, Javascript, Bootstrap, etc.</li>
+                            </ul>
+                            </p>
+                            <p style="text-align: right;"><a target="_blank" class="btn btn-outline-danger" style="color:black !important"
+                                    href="https://github.com/arunkumar02042002/bandhu"><i
+                                        style="color:black !important" class="fab fa-github"></i> View on Github</a></p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Other Projects-->
+
+    <div id="other-projects">
+
+        <h3 class="mb-5">Other Projects <i class="fa-solid fa-code"></i></h3>
+
+        <div class="container card-container">
+            
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="assets/images/quiz-app.png" alt="QUIZ APP">
+                <div class="card-body">
+                  <h5 class="card-title">Quiz App</h5>
+                  <p class="card-text">A Quiz App built using Vanilla Javascript.</p>
+                  <a href="https://replit.com/@arunkumar2403gg/QizzApp#index.js" target="_blank" class="btn btn-outline-primary">GitHub <i class="fa fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="assets/images/chat-bot.png" alt="CHAT BOT">
+                <div class="card-body">
+                  <h5 class="card-title">Chat Bot</h5>
+                  <p class="card-text">A simple chatbot built using Python.</p>
+                  <a href="https://github.com/arunkumar02042002/BAB_BOT" target="_blank" class="btn btn-outline-primary">GitHub <i class="fa fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="assets/images/Blog-app.png" alt="BLOG APP">
+                <div class="card-body">
+                  <h5 class="card-title">Blog App</h5>
+                  <p class="card-text">Simplifying Blogging using Django.</p>
+                  <a href="https://github.com/arunkumar02042002/blog_app_django/" target="_blank" class="btn btn-outline-primary">GitHub <i class="fa fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="assets/images/web-scarpe.png" alt="FlipCart Scrapper">
+                <div class="card-body">
+                  <h5 class="card-title">FlipCart Scrapper</h5>
+                  <p class="card-text">Built using Python, Flask, and MongoDB.</p>
+                  <a href="https://github.com/arunkumar02042002/Flipcart_reveiw_Scrapper" target="_blank" class="btn btn-outline-primary">GitHub <i class="fa fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="assets/images/x-o-game.png" alt="X-O Game">
+                <div class="card-body">
+                  <h5 class="card-title">X-O Game</h5>
+                  <p class="card-text">A two player game.</p>
+                  <a href="https://github.com/arunkumar02042002/bandhu" target="_blank" class="btn btn-outline-primary">GitHub <i class="fa fa-github"></i></a>
+                </div>
+            </div> -->
+
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="assets/images/blog-api.png" alt="BLOG API">
+                <div class="card-body">
+                  <h5 class="card-title">Blog API</h5>
+                  <p class="card-text">Backend API for Blog APP in RestFramework.</p>
+                  <a href="https://github.com/arunkumar02042002/blog_api/" target="_blank" class="btn btn-outline-primary">GitHub <i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Skills -->
+
+    <div id="portfolio-skills">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Skills</h2>
+        <div class="container">
+            <span class="portfolio-skill-badge badge bg-light text-dark">Backend Development</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Full Stack Development</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Database Model Designing</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">API Development</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Database Management</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">UI/UX Designing</span>
+        </div>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Languages</h2>
+        <div class="container">
+            <span class="portfolio-skill-badge badge bg-light text-dark">Python <i class="fab fa-python"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Javascript <i class="fab fa-js"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark"><i class="fab fa-c"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">C++</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Java <i class="fab fa-java"></i></span>
+        </div>
+
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Tools & Technologies</h2>
+        <div class="container">
+            <span class="portfolio-skill-badge badge bg-light text-dark">Django</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">MySQL</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">PostgreSQL</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Pandas</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Numpy</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Celery</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Git and GitHub</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Postman</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Bootstrap</span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="portfolio-highlights">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Certifications 📜</h2>
+
+        <br>
+        <br>
+        <div class="container">
+            <div id="playlist-container">
+
+                <iframe src="https://drive.google.com/file/d/1bQGtQeObMvjUsG-NHikNLIG9h9dajrUW/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1JfwiniOYIghpnot3D6vMczPw1fDT-eXt/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1cAoffaaFeOaNZ48oeFhkHH-SfOHD_D2g/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1p0ediSsPrF3BWD3EStYXSir_QtpdTrNx/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/15mIok4TFrwqVakAsi12IWNRm3DMJLDOj/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1sGPUT6oU7yXYoHNr1pI_cHT5EURlZQPD/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1q-NS1e4k9oS2DB6p0IQZJhn4A8qx4S3p/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1fVvjefA0ltY1Ru-eRL8F45OF4zPWAG-Y/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1-GMI66pPEu-Qvf2ixKIEl20W8O2c82P8/preview" width="320" height="280" allow="autoplay"></iframe>
+                
+                <iframe src="https://drive.google.com/file/d/1HwRv4oXPvBKvJ_qdPtSxIxVQ_aT-FYEP/preview" width="320" height="280" allow="autoplay"></iframe>
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+        <h2 class="portfolio-heading">Achievements 🏆</h2>
+        <div id="portfolio-achievements" class="container">
+            <b>
+                1. Qualified GATE 2022 and GATE 2023<br>
+                2. Solved 700+ Problems on GeeksForGeeks<br>
+                3. Solved 250+ Problems on Leetcode<br>
+                4. Earned Multiple Certifications on Hackerrank<br>
+            </b>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div id="portfolio-footer" class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2024 Arun Kumar
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <div id="portfolio-hero-up">
+                        <span>
+                            <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-5 portfolio-footer-social">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://github.com/arunkumar02042002" target="_blank"><i
+                                    class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/arunkumar2403/"
+                                target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://instagram.com/bhaiarunbihari" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="mailto:arun.kumar.2403gg@gmail.com" target="_blank"><i
+                                    class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
