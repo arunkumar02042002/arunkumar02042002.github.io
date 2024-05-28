@@ -753,3 +753,7 @@ html:not([data-scroll="0"]) #portfolio-float.float {
     margin: 10px;
     flex: 0 0 auto;
 }
+
+.black{
+    color: black !important;
+}
