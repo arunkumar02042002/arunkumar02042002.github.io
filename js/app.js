@@ -71,7 +71,7 @@ function addProjects(PROJECTS){
   let otherProjects = document.getElementById("other-projects-container");
 
   PROJECTS.forEach(project => {
-    console.log(project);
+    // console.log(project);
     let card = createElement("div");
     card.classList.add("card");
     card.style.width = "250px";
