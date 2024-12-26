@@ -1,10 +1,14 @@
 // Side Bars
 function openSidebar() {
-  document.getElementById("portfolio-sidebar").setAttribute('style', 'display:flex !important; ');
+  document
+    .getElementById("portfolio-sidebar")
+    .setAttribute("style", "display:flex !important; ");
 }
 
 function closeSidebar() {
-  document.getElementById("portfolio-sidebar").setAttribute('style', 'display:none !important;');
+  document
+    .getElementById("portfolio-sidebar")
+    .setAttribute("style", "display:none !important;");
 }
 
 if (matchMedia("(min-width: 835px)").matches) {
